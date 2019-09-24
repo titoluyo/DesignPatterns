@@ -24,7 +24,7 @@ namespace Patterns.Factory.Concrete
             {
                 foreach (var item in profiles)
                 {
-                    if (item.Name == "TestProfile")
+                    if (item.Name == "Profile")
                         cfg.AddProfile(Activator.CreateInstance(item) as Profile);
                 }
             });
